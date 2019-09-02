@@ -11,7 +11,7 @@ def count():
         lock.release()
 def getDbConnection():
     global lock
-    with lock:
+    with lock: # will free automatically
         if connectionAvailable:
             connectionAvailable = False
             conn = "dbConnection"

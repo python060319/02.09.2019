@@ -15,3 +15,6 @@ urllib.request.urlretrieve(url, f'c:/itay/{filename}')
 # urlopen -> info - content-length
 # os - what is thc urrent file size
 # 100 * current / total = %
+
+d = urllib.request.urlopen('http://www.study-io.com/java/installations/mongodb-win32-x86_64-2008plus-ssl-3.6.3-signed.msi')
+print(d.info().get('content-length'))

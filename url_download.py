@@ -12,6 +12,6 @@ urllib.request.urlretrieve(url, f'c:/itay/{filename}')
 # second thread counts the seconds...
 # when download completed counting thread will finish
 # *etgar: show percentage
-# urlopen -> info
+# urlopen -> info - content-length
 # os - what is thc urrent file size
 # 100 * current / total = %

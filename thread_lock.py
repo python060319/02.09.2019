@@ -11,7 +11,7 @@ def count():
         lock.release()
 def getDbConnection():
     global lock
-    with lock: # will free automatically
+    with lock: # will free automatically when leave the indent
         if connectionAvailable:
             connectionAvailable = False
             conn = "dbConnection"
